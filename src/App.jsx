@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // import reactDom from 'react-dom';
 // import Heading   from './Heading';
 // import Para from './Para';
@@ -554,7 +554,41 @@ export default App;
 // import UseEffect1 from './incr/i/useEffect.js';
 // import UseReducer from './incr/useReducer';
 // import Todo1 from './ToReact.js/todo1';
-import Temp from "./wheather/wheather";
+// import Temp from "./wheather/wheather";   wheather application
+
+// const App = () => {
+
+//   return (
+
+
+//     <>
+//       {/* <Restaurent /> */}
+
+
+
+
+//       <Temp />
+
+
+
+
+//     </>
+//   )
+// };
+
+// export default App;
+import React from "react";
+import Home from './ANIMATED WEBSITE/Home';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+
+import {Switch, Route,Redirect} from "react-router-dom";
+import Animated from './ANIMATED WEBSITE/Animated';
+import Service from './ANIMATED WEBSITE/Service';
+import About from './ANIMATED WEBSITE/About';
+import Navbar from './ANIMATED WEBSITE/Navbar';
+import Footer from "./ANIMATED WEBSITE/Footer";
+
 
 const App = () => {
 
@@ -562,13 +596,19 @@ const App = () => {
 
 
     <>
-      {/* <Restaurent /> */}
+    <Navbar /> 
 
 
+      <Switch>
+        <Route  exact path="/" component={Home}/>
+        <Route  exact path="/About" component={About}/>
+        <Route  exact path="/Service" component={Service}/>
+        <Route  exact path="/Animated" component={Animated}/>
+        <Redirect to="/" />
 
-
-      <Temp />
-
+      </Switch>
+      <Footer />
+  
 
 
 

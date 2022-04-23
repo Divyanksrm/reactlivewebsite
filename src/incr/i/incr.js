@@ -19,12 +19,12 @@ const UseState = () => {
                     <span></span>
                     <span></span>
                     <span></span>
-
+ 
 
                 </div>
 
                 <button type="button" className="btn btn-outline-warning " 
-                onClick={() =>(myNum>0 ? setMyNum(myNum - 1) :setMyNum(0))}>DICR </button>
+                onClick={() =>(  setMyNum(myNum - 1) :setMyNum(0))}>DICR </button>
 
 
 

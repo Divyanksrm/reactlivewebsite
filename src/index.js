@@ -503,7 +503,7 @@
 import ReactDOM from "react-dom";
 import './index.css';
  import App from './App';
-
+import {BrowserRouter} from "react-router-dom";
 
 
 // import App from  './App';
@@ -513,23 +513,12 @@ import './index.css';
 //   le.log(remaining); 
  
 ReactDOM.render(
-  // <ToDO />,
-  
   <>
-  <App/>
-
-
-</>,
-  document.getElementById('root')
-  );
-     
+    <BrowserRouter>
+       <App />
+    </BrowserRouter>,
+   
+    </>,
+ document.getElementById("root")
+);
   
-  
-
-
-             
-
-
-
-
-

@@ -251,7 +251,7 @@ ol li {
 } */
 
 /* //Wheather css */
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/* @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
 
@@ -377,37 +377,37 @@ body {
   align-items: center;
   color: #2805f2;
   /* background-color: blanchedalmond; */
-}
+/* } */
 
-.widget .extra-temp .extra-info-leftside {
+/* .widget .extra-temp .extra-info-leftside {
   text-align: left;
   font-weight: 600;
   text-transform: capitalize;
   color: #080705;
   font-size: 15px;
-}
+} */
 
 /* input search button style  */
 
-.search {
+/* .search {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
-}
+} */
 
-.searchTerm {
+/* .searchTerm {
   width: 50%;
-  /* border: 3px solid #00b4cc; */
+  /* border: 3px solid #00b4cc; 
   border: none;
   padding: 16px;
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
   font-size: 18px;
-}
+} */
 
-.searchTerm:focus {
+/* .searchTerm:focus {
   color: #00b4cc;
 }
 
@@ -431,17 +431,111 @@ body {
 
 .wrap {
   display: flex;
-  /* justify-content: center; */
+  /* justify-content: center; *
   text-align: center;
   margin-top: -280px;
   margin-bottom: 50px;
 }
 
-/*Resize the wrap to see the search bar change!*/
+/*Resize the wrap to see the search bar change!*
  .wrap {
   width: 30%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} 
+/* }  */  
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Square+Peg&family=Updock&family=Zen+Kurenaido&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: tomato;
+  font-family: 'Cinzel', serif;
+  background-color: rgb(238, 188, 230);
+ background-image: url("http://source.unsplash.com/2800x600/?white");;
+}
+.navbar{
+  background-color: rgb(81, 24, 24) !important;
+  background-color: black;
+}
+.navbar-brand{
+  font: size 1.2rem !important ;
+  font-weight: bold;
+  font-family: 'Square Peg', cursive;  
+color: rgb(69, 5, 217) !important;
+}
+.navbar a{
+  font-size: 2.0rem;
+  text-transform: capitalize;
+
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid rosybrown;
+
+}
+.nav-item {
+  font-size: 1.0rem;
+}
+.navbar a:hover{
+  color: aqua !important;
+}
+@media (max-width:991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+}
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+#header .brand-name{
+  color:blue;
+}
+#header h2{
+  font-family: 'Cinzel', serif;
+  color: rgb(121, 72, 7);
+}
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: rgb(229, 8, 8);
+  border: 2px solid red;
+  text-decoration: none;
+}
+#header .btn-get-started :hover {
+  background: red;
+  color: beige;
+
+}
+.header-img{
+  text-align: right;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+  @-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
