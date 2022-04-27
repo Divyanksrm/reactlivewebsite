@@ -25,7 +25,7 @@ const FormInput = (props) => {
       />
       <span>{errorMessage}</span>
     </div>
-  );
+  )
 };
 
 export default FormInput;
